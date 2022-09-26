@@ -1,0 +1,36 @@
+section img {
+  width: 100%;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #888;
+  border-bottom: 1px solid #888;
+  background-color: #50223c;
+  padding: 4px;
+}
+section {
+  border: 1px solid #50223c;
+  margin-top: 4rem;
+}
+
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+h2 {
+  text-align: center;
+  color: #f0dac5;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  text-decoration-color: #f0dac5;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #f0dac5;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
