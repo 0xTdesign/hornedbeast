@@ -1,5 +1,25 @@
 main {
   margin: 0 auto;
-  padding: 0;
-  max-width: 1100px;
+  padding: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container {
+  margin: 0 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+  main {
+    margin: 0 auto;
+    padding: 0 auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
 }

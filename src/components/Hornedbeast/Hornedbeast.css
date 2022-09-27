@@ -1,36 +1,45 @@
-section img {
-  width: 100%;
-  border-left: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #888;
-  border-bottom: 1px solid #888;
-  background-color: #50223c;
-  padding: 4px;
+img {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #50223c;
 }
-section {
-  border: 1px solid #50223c;
-  margin-top: 4rem;
+
+img:hover {
+  border: 3px solid #f0dac5;
 }
 
 .photo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  width: 100%;
 }
 
 h2 {
   text-align: center;
   color: #f0dac5;
-  font-size: 1.6rem;
+  font-size: 1rem;
   text-decoration: underline;
   text-decoration-color: #f0dac5;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: #f0dac5;
   cursor: pointer;
   text-align: center;
   transition: all 0.2s ease-in-out;
+}
+
+section span {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #f0dac5;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  img {
+    width: 100%;
+  }
 }

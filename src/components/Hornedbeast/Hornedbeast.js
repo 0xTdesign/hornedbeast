@@ -1,22 +1,23 @@
-import React, { Component } from "react";
+import { useState } from "react";
 import "./Hornedbeast.css";
 
-export class Hornedbeast extends Component {
-  render() {
-    return (
-      <section>
-        <h2>{this.props.title}</h2>
-        <div className="photo">
-          <img
-            title={this.props.title}
-            alt={this.props.title}
-            src={this.props.imageUrl}
-          />
-        </div>
-        <p>{this.props.description}</p>
-      </section>
-    );
-  }
-}
+export default function Hornedbeast({ title, imageUrl, description }) {
+  const [vote, setVote] = useState(0);
 
-export default Hornedbeast;
+  const clickVote = () => {
+    setVote(vote + 1);
+  };
+
+  return (
+    <section>
+      <h2>{title}</h2>
+      <div className="photo">
+        <img onClick={clickVote} title={title} alt={title} src={imageUrl} />
+      </div>
+      <div className="box">
+        <p>{description}</p>
+        <span>{vote}❤️</span>
+      </div>
+    </section>
+  );
+}
