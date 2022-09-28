@@ -14,7 +14,7 @@ img:hover {
   width: 100%;
 }
 
-h2 {
+section h2 {
   text-align: center;
   color: #f0dac5;
   font-size: 1rem;
@@ -22,7 +22,7 @@ h2 {
   text-decoration-color: #f0dac5;
 }
 
-p {
+section p {
   font-size: 0.8rem;
   color: #f0dac5;
   cursor: pointer;

@@ -1,10 +1,16 @@
 import { useState } from "react";
 import "./Hornedbeast.css";
 
-export default function Hornedbeast({ title, imageUrl, description }) {
+export default function Hornedbeast({
+  title,
+  imageUrl,
+  description,
+  imageLarge,
+  beast,
+}) {
   const [vote, setVote] = useState(0);
 
-  const clickVote = () => {
+  const voteClick = () => {
     setVote(vote + 1);
   };
 
@@ -12,7 +18,15 @@ export default function Hornedbeast({ title, imageUrl, description }) {
     <section>
       <h2>{title}</h2>
       <div className="photo">
-        <img onClick={clickVote} title={title} alt={title} src={imageUrl} />
+        <img
+          onClick={() => {
+            voteClick();
+            imageLarge(beast);
+          }}
+          title={title}
+          src={imageUrl}
+          alt={title}
+        />
       </div>
       <div className="box">
         <p>{description}</p>
