@@ -5,7 +5,7 @@ export default function Hornedbeast({
   title,
   imageUrl,
   description,
-  imageLarge,
+  handleModal,
   beast,
 }) {
   const [vote, setVote] = useState(0);
@@ -21,7 +21,7 @@ export default function Hornedbeast({
         <img
           onClick={() => {
             voteClick();
-            imageLarge(beast);
+            handleModal(beast);
           }}
           title={title}
           src={imageUrl}

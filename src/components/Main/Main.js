@@ -1,18 +1,18 @@
 import Hornedbeast from "../Hornedbeast/Hornedbeast";
 import "./Main.css";
 
-export default function Main({ beastData, imageLarge }) {
+export default function Main({ beastData, handleModal }) {
   return (
     <main>
-      {beastData.map((beast) => {
+      {beastData.map((beast, index) => {
         return (
-          <div className="main-container">
+          <div key={index} className="main-container">
             <Hornedbeast
               beast={beast}
               title={beast.title}
               imageUrl={beast.image_url}
               description={beast.description}
-              imageLarge={imageLarge}
+              handleModal={handleModal}
             />
           </div>
         );

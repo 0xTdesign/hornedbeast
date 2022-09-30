@@ -1,7 +1,7 @@
 .modal {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -11,22 +11,24 @@
 }
 
 .modal__box {
-  padding: 3rem;
+  padding: 2.5rem;
   background-color: wheat;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border-radius: 10px;
+  margin: 0rem 0.8rem;
 }
 
 .content {
   text-align: center;
   color: #333;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .modal__box img {
-  margin-right: 50px;
+  border: 3px solid #50223c;
+  width: 65%;
 }
 
 .modal-btn {
@@ -39,4 +41,20 @@
 .modal-btn:hover {
   background-color: wheat;
   color: #333;
+}
+.modal {
+}
+
+@media only screen and (min-width: 801px) {
+  .modal__box {
+    margin: 0rem 25rem;
+  }
+
+  .modal img {
+    width: 45%;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
 }

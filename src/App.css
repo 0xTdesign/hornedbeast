@@ -2,33 +2,3 @@ body {
   background-color: #1c2340;
   font-family: monospace;
 }
-.modal {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal__box {
-  padding: 3rem;
-  background-color: wheat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.content {
-  text-align: center;
-  color: #333;
-  font-size: 1rem;
-}
-
-.modal__box img {
-  margin-right: 50px;
-}

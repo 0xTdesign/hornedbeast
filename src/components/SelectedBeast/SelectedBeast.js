@@ -1,7 +1,7 @@
 import React from "react";
 import "./SelectedBeast.css";
 
-export default function SelectedBeast({ activeBeast, imageLarge }) {
+export default function SelectedBeast({ activeBeast, handleModal }) {
   return (
     <div className="modal">
       <div className="modal__box">
@@ -13,7 +13,7 @@ export default function SelectedBeast({ activeBeast, imageLarge }) {
         <div className="content">
           <h2>{activeBeast.title}</h2>
           <p>{activeBeast.description}</p>
-          <button className="modal-btn" onClick={imageLarge}>
+          <button className="modal-btn" onClick={handleModal}>
             X
           </button>
         </div>
